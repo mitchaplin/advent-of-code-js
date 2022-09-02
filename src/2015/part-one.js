@@ -1,5 +1,5 @@
 import { frequencies } from '../utils.js';
 import { input } from './input.js';
 
-
-console.log(frequencies(input));
+const freqs = frequencies(input)
+console.log(freqs["("] - freqs[")"]);
