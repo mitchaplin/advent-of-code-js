@@ -54,3 +54,22 @@ export const isArrUniqFirstOccuranceMap = (arrUniq) =>
 				.map((v) => [v.id, v])
 		).values(),
 	].reverse();
+
+// TODO: this needs to be cleaned up/optimized
+export const partitionArray = (arr) => {
+	let newArr = [];
+	let iter = 0;
+	for (const _ of arr) {
+		if (iter >= arr.length - 1) {
+			break;
+		} else {
+			newArr.push(`${arr[iter]}${arr[iter + 1]}`);
+		}
+		iter = iter + 1;
+	}
+	return newArr;
+};
+
+export const removeWhiteSpaceFromArray = (array) => {
+	return array.filter((item) => item != ' ');
+};
