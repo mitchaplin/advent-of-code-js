@@ -70,6 +70,20 @@ export const partitionArray = (arr) => {
 	return newArr;
 };
 
+export const partitionArrayByThree = (arr) => {
+	let newArr = [];
+	let iter = 0;
+	for (const _ of arr) {
+		if (iter >= arr.length - 2) {
+			break;
+		} else {
+			newArr.push(`${arr[iter]}${arr[iter + 1]}${arr[iter + 2]}`);
+		}
+		iter = iter + 1;
+	}
+	return newArr;
+};
+
 export const removeWhiteSpaceFromArray = (array) => {
 	return array.filter((item) => item != ' ');
 };
