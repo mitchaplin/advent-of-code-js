@@ -84,6 +84,14 @@ export const partitionArrayByThree = (arr) => {
 	return newArr;
 };
 
+export const splitToChunks = (array, parts) => {
+	let result = [];
+	for (let i = parts; i > 0; i--) {
+		result.push(array.splice(0, Math.ceil(array.length / i)));
+	}
+	return result;
+};
+
 export const removeWhiteSpaceFromArray = (array) => {
 	return array.filter((item) => item != ' ');
 };
