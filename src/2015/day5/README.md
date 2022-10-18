@@ -2,7 +2,7 @@
 
 | Part 1 | Part 2 |
 |--------|--------|
-|  `236` |   `50?` |
+|  `236` |   `51` |
 
 ## --- Day 5: Doesn't He Have Intern-Elves For This? ---
 
